@@ -9,10 +9,7 @@ let data = []
 csv()
 .fromStream(request.get(url))
 .subscribe((json) => {
-  return new Promise((resolve, reject) => {
-    data.push(json)
-    resolve(json)
-  })
+  data.push(json)
 }, (error) => {
   console.error(error)
 }, () => {
