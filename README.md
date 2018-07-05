@@ -13,7 +13,7 @@ $ node convert.js
 
 ### 1. Why did I design this project the way I did?
 
-convert.js converts one row at a time. This saves memory compared to when you convert the whole CSV file. So you can convert even huge CSV files.
+I used csvtojson module. This greatly help and reduce the code I needed to write.
 
 ### 2. How did I test?
 
